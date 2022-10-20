@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>2D2 Viagens LTDA. </title>
+</head>
+
+<body>
+    <!--Começo do header-->
+    <header>
+        <i class="fa-solid fa-bars" id="menu-bar"></i>
+        <a href="#" class="logo"><span>2D2</span> VIAGENS</a>
+        <nav class="navbar">
+            <a href="#Home">Home</a>
+            <a href="#Pacotes">Pacotes</a>
+            <a href="#Reservas">Reservas</a>
+            <a href="#Serviços">Serviços</a>
+            <a href="#Avaliações">Avaliações</a>
+            <a href="#Contato">Contato</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="Pesquise aqui...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+    <div class="login-form-container">
+        <i class="fa-solid fa-xmark" id="form-close"></i>
+        <form action="">
+            <h3>Login</h3>
+            <input type="email" class="box" placeholder="Digite seu email">
+            <input type="password" class="box" placeholder="Digite sua senha">
+            <input type="submit" value="Entrar" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">Lembrar login</label>
+            <p>Esqueceu sua senha?<a href="#"> Clique aqui</a></p>
+            <p>Ainda não possui cadastro?<a href="#"> Cadastrar agora</a></p>
+        </form>
+    </div>
+
+    <!--Fim do Header-->
+    <!--Início do Home-->
+    <section id="Home" class="Home">
+        <div class="content">
+            <h3>Transformamos sonhos em realidade</h3>
+            <p>Descubra novos lugares com a <span>2D2</span> Viagens.</p>
+            <a href="#Pacotes" class="btn">Saiba mais</a>
+        </div>
+
+        <div class="controls">
+            <span class="video-btn active" data-src="./Assets/Videos/video-1.mp4"></span>
+            <span class="video-btn" data-src="./Assets/Videos/video-2.mp4"></span>
+            <span class="video-btn" data-src="./Assets/Videos/video-3.mp4"></span>
+            <span class="video-btn" data-src="./Assets/Videos/video-4.mp4"></span>
+            <span class="video-btn" data-src="./Assets/Videos/video-5.mp4"></span>
+        </div>
+        <div class="video-container">
+            <video src="./Assets/Videos/video-1.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+
+    </section>
+    <!--Fim do Home-->
+
+
+<!--Pacotes inícios-->
+    <section class="Pacotes" id="Pacotes">
+
+        <h1 class="heading">
+
+            <span>P</span>
+            <span>A</span>
+            <span>C</span>
+            <span>O</span>
+            <span>T</span>
+            <span>E</span>
+            <span>S</span>
+
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="Assets/Images/p-1.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"></i> Mumbai, Índia</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+
+                    </div>
+                    <div class="price">R$ XXXX À vista ou em 12x S/juros<span> R$ XXXX</span></div>
+                    <a href="#" class="btn">Reserve agora</a>
+                </div>
+
+            </div>
+            <div class="box">
+                <img src="Assets/Images/p-3.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"></i> Sydney, Austrália</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+
+                    </div>
+                    <div class="price">R$ XXXX À vista ou em 12x S/juros<span> R$ XXXX</span></div>
+                    <a href="#" class="btn">Reserve agora</a>
+                </div>
+
+            </div>
+            <div class="box">
+                <img src="Assets/Images/p-4.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"></i> Paris, França</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+
+                    </div>
+                    <div class="price">R$ XXXX À vista ou em 12x S/juros<span> R$ XXXX</span></div>
+                    <a href="#" class="btn">Reserve agora</a>
+                </div>
+
+            </div>
+            <div class="box">
+                <img src="Assets/Images/p-5.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"></i> Tóquio, Japão</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+
+                    </div>
+                    <div class="price">R$ XXXX<span> R$ XXXX</span></div>
+                    <a href="#" class="btn">Reserve agora</a>
+                </div>
+
+            </div>
+            <div class="box">
+                <img src="Assets/Images/p-6.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"></i> Cairo, Egito</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+
+                    </div>
+                    <div class="price">R$ XXXX À vista ou em 12x S/juros<span> R$ XXXX</span></div>
+                    <a href="#" class="btn">Reserve agora</a>
+                </div>
+
+            </div>
+            <div class="box">
+                <img src="Assets/Images/p-2.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"></i> Honolulu, Havaí</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+
+                    </div>
+                    <div class="price">R$ XXXX À vista ou em 12x S/juros<span> R$ XXXX</span></div>
+                    <a href="#" class="btn">Reserve agora</a>
+                </div>
+
+            </div>
+            <div class="box">
+                <img src="Assets/Images/p-15.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"></i> Londres, Inglaterra</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+
+                    </div>
+                    <div class="price">R$ XXXX À vista ou em 12x S/juros<span> R$ XXXX</span></div>
+                    <a href="#" class="btn">Reserve agora</a>
+                </div>
+
+            </div>
+            <div class="box">
+                <img src="Assets/Images/p-7.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"></i> Maldivas</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+
+                    </div>
+                    <div class="price">R$ XXXX<span> R$ XXXX</span></div>
+                    <a href="#" class="btn">Reserve agora</a>
+                </div>
+
+            </div>
+            <div class="box">
+                <img src="Assets/Images/p-8.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"></i> Rio De Janeiro, RJ, Brasil</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+
+                    </div>
+                    <div class="price">R$ XXXX À vista ou em 12x S/juros<span> R$ XXXX</span></div>
+                    <a href="#" class="btn">Reserve agora</a>
+                </div>
+
+            </div>
+            <div class="box">
+                <img src="Assets/Images/p-9.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"></i> Roma, Itália</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+
+                    </div>
+                    <div class="price">R$ XXXX<span> R$ XXXX</span></div>
+                    <a href="#" class="btn">Reserve agora</a>
+                </div>
+
+            </div>
+            <div class="box">
+                <img src="Assets/Images/p-10.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"></i> Nova Iorque, Estados Unidos</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+
+                    </div>
+                    <div class="price">R$ XXXX À vista ou em 12x S/juros<span> R$ XXXX</span></div>
+                    <a href="#" class="btn">Reserve agora</a>
+                  
+                </div>
+
+            </div>
+            <div class="box">
+                <img src="Assets/Images/p-11.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"></i> Bariloche, Argentina</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+
+                    </div>
+                    <div class="price">R$ XXXX<span> R$ XXXX</span></div>
+                    <a href="#" class="btn">Reserve agora</a>
+                </div>
+
+            </div>
+            <div class="box">
+                <img src="Assets/Images/p-12.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"></i> Foz do Iguaçu, Paraná, Brasil</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+
+                    </div>
+                    <div class="price">R$ XXXX À vista ou em 12x S/juros<span> R$ XXXX</span></div>
+                    <a href="#" class="btn">Reserve agora</a>
+                </div>
+
+            </div>
+            <div class="box">
+                <img src="Assets/Images/p-13.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"></i> Machu Pichu, Peru</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+
+                    </div>
+                    <div class="price">R$ XXXX À vista ou em 12x S/juros<span> R$ XXXX</span></div>
+                    <a href="#" class="btn">Reserve agora</a>
+                </div>
+
+            </div>
+            <div class="box">
+                <img src="Assets/Images/p-14.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"></i> Amsterdã, Holanda</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+
+                    </div>
+                    <div class="price">R$ XXXX À vista ou em 12x S/juros<span> R$ XXXX</span></div>
+                    <a href="#" class="btn">Reserve agora</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="Assets/Images/p-16.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"></i> Hong Kong, China</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+
+                    </div>
+                    <div class="price">R$ XXXX À vista ou em 12x S/juros<span> R$ XXXX</span></div>
+                    <a href="#" class="btn">Reserve agora</a>
+                </div>
+
+            </div>
+            <div class="box">
+                <img src="Assets/Images/p-17.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"></i> Vancouver, Canadá</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+
+                    </div>
+                    <div class="price">R$ XXXX À vista ou em 12x S/juros<span> R$ XXXX</span></div>
+                    <a href="#" class="btn">Reserve agora</a>
+                </div>
+
+            </div>
+            <div class="box">
+                <img src="Assets/Images/p-18.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"></i> Las Vegas, Estados Unidos</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+
+                    </div>
+                    <div class="price">R$ XXXX À vista ou em 12x S/juros<span> R$ XXXX</span></div>
+                    <a href="#" class="btn">Reserve agora</a>
+                </div>
+
+            </div>
+            <div class="box">
+                <img src="Assets/Images/p-19.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"></i> Orlando, Estados Unidos</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+
+                    </div>
+                    <div class="price">R$ XXXX À vista ou em 12x S/juros<span> R$ XXXX</span></div>
+                    <a href="#" class="btn">Reserve agora</a>
+                </div>
+
+            </div>
+            <div class="box">
+                <img src="Assets/Images/p-20.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"></i> Berlim, Alemanha</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+
+                    </div>
+                    <div class="price">R$ XXXX À vista ou em 12x S/juros<span> R$ XXXX</span></div>
+                    <a href="#" class="btn">Reserve agora</a>
+                </div>
+
+            </div>
+            <div class="box">
+                <img src="Assets/Images/p-21.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"></i> Istambul, Turquia</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+
+                    </div>
+                    <div class="price">R$ XXXX À vista ou em 12x S/juros<span> R$ XXXX</span></div>
+                    <a href="#" class="btn">Reserve agora</a>
+                </div>
+
+            </div>
+            <div class="box">
+                <img src="Assets/Images/p-22.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"></i> Barcelona, Espanha</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+
+                    </div>
+                    <div class="price">R$ XXXX À vista ou em 12x S/juros<span> R$ XXXX</span></div>
+                    <a href="#" class="btn">Reserve agora</a>
+                </div>
+
+            </div>
+            <div class="box">
+                <img src="Assets/Images/p-23.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"></i> Madri, Espanha</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+
+                    </div>
+                    <div class="price">R$ XXXX À vista ou em 12x S/juros<span> R$ XXXX</span></div>
+                    <a href="#" class="btn">Reserve agora</a>
+                </div>
+
+            </div>
+            <div class="box">
+                <img src="Assets/Images/p-24.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"></i> São Francisco, Estados Unidos</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+
+                    </div>
+                    <div class="price">R$ XXXX À vista ou em 12x S/juros<span> R$ XXXX</span></div>
+                    <a href="#" class="btn">Reserve agora</a>
+                </div>
+
+            </div>
+            <div class="box">
+                <img src="Assets/Images/p-25.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"></i> Atenas, Grécia</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+
+                    </div>
+                    <div class="price">R$ XXXX À vista ou em 12x S/juros<span> R$ XXXX</span></div>
+                    <a href="#" class="btn">Reserve agora</a>
+                </div>
+
+            </div>
+            <div class="box">
+                <img src="Assets/Images/p-26.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"></i> Cidade do México, México</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+
+                    </div>
+                    <div class="price">R$ XXXX À vista ou em 12x S/juros<span> R$ XXXX</span></div>
+                    <a href="#" class="btn">Reserve agora</a>
+                </div>
+
+            </div>
+            <div class="box">
+                <img src="Assets/Images/p-27.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"></i> Veneza, Itália</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+
+                    </div>
+                    <div class="price">R$ XXXX À vista ou em 12x S/juros<span> R$ XXXX</span></div>
+                    <a href="#" class="btn">Reserve agora</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--Pacotes Fim-->
+
+
+
+
+
+
+    <!--Começo Reservas-->
+    <section class="Reservas" id="Reservas">
+
+        <h1 class="heading">
+            <span>R</span>
+            <span>E</span>
+            <span>S</span>
+            <span>E</span>
+            <span>R</span>
+            <span>V</span>
+            <span>E</span>
+            <span class="space"></span>
+            <span>J</span>
+            <span>Á !</span>
+        </h1>
+        <div class="row">
+            <div class="image">
+                <img src="Assets/Images/Traveling-rafiki.svg" alt="travelling">
+            </div>
+
+            <form action="">
+                <div class="inputBox">
+                    <h3>Para aonde?</h3>
+                    <input type="text" placeholder="Destino">
+                </div>
+                <div class="inputBox">
+                    <h3>Quantos adultos?</h3>
+                    <input type="number" placeholder="Número de adultos">
+                </div>
+                <div class="inputBox">
+                    <h3>Quantas crianças?</h3>
+                    <input type="number" placeholder="De 0 a 12 anos incompletos, conforme Lei Nº 8.069/90">
+                </div>
+                <div class="inputBox">
+                    <h3>Ida</h3>
+                    <input type="date" placeholder="Ida">
+                </div>
+                <div class="inputBox">
+                    <h3>Volta</h3>
+                    <input type="date" placeholder="Volta">
+                </div>
+                <input type="submit" class="btn" value="Reservar agora">
+            </form>
+
+    </section>
+
+    <!--Fim do Reservas-->
+    
+
+    <!--Serviços-->
+    <section class="Serviços" id="Serviços">
+
+        <h1 class="heading">
+
+            <span>S</span>
+            <span>E</span>
+            <span>R</span>
+            <span>V</span>
+            <span>I</span>
+            <span>Ç</span>
+            <span>O</span>
+            <span>S</span>
+
+        </h1>
+
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-hotel"></i>
+                <h3>Hóteis mais bem avaliados do mundo</h3>
+                <p>Lore Ipsum dolor sit amet consectetur, adispicing elit, Inventore commodi eauram, regntium exitum
+                    malum ipsum nulo lectio ada ore Ipsum dolor sit amet consectetur, adispicing elit, Inventore commodi
+                    eauram, regntium exitum
+                    malum ipsum nulo lectio ada </p>
+            </div>
+
+
+            <div class="box">
+                <i class="fa-solid fa-utensils"></i>
+                <h3>Seleção de restaurantes e bares premiados</h3>
+                <p>Lore Ipsum dolor sit amet consectetur, adispicing elit, Inventore commodi eauram, regntium exitum
+                    malum ipsum nulo lectio ada ore Ipsum dolor sit amet consectetur, adispicing elit, Inventore commodi
+                    eauram, regntium exitum
+                    malum ipsum nulo lectio ada </p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-bullhorn"></i>
+                <h3>Segurança, profissionalismo, e amor por servir</h3>
+                <p>Lore Ipsum dolor sit amet consectetur, adispicing elit, Inventore commodi eauram, regntium exitum
+                    malum ipsum nulo lectio ada ore Ipsum dolor sit amet consectetur, adispicing elit, Inventore commodi
+                    eauram, regntium exitum
+                    malum ipsum nulo lectio ada </p>
+
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-people-group"></i>
+                <h3>Colaboradores treinados e experientes</h3>
+                <p>Lore Ipsum dolor sit amet consectetur, adispicing elit, Inventore commodi eauram, regntium exitum
+                    malum ipsum nulo lectio ada ore Ipsum dolor sit amet consectetur, adispicing elit, Inventore commodi
+                    eauram, regntium exitum
+                    malum ipsum nulo lectio ada </p>
+
+            </div>
+            <div class="box">
+                <i class="fas fa-globe-asia"></i>
+                <h3>Presente no mundo todo</h3>
+                <p>Lore Ipsum dolor sit amet consectetur, adispicing elit, Inventore commodi eauram, regntium exitum
+                    malum ipsum nulo lectio ada ore Ipsum dolor sit amet consectetur, adispicing elit, Inventore commodi
+                    eauram, regntium exitum
+                    malum ipsum nulo lectio ada</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-plane"></i>
+                <h3>Viagens otimizadas com codeshare</h3>
+                <p>Lore Ipsum dolor sit amet consectetur, adispicing elit, Inventore commodi eauram, regntium exitum
+                    malum ipsum nulo lectio ada ore Ipsum dolor sit amet consectetur, adispicing elit, Inventore commodi
+                    eauram, regntium exitum
+                    malum ipsum nulo lectio ada </p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-hiking"></i>
+                <h3>Aventuras e recordações inesquecíveis</h3>
+                <p>Lore Ipsum dolor sit amet consectetur, adispicing elit, Inventore commodi eauram, regntium exitum
+                    malum ipsum nulo lectio ada ore Ipsum dolor sit amet consectetur, adispicing elit, Inventore commodi
+                    eauram, regntium exitum
+                    malum ipsum nulo lectio ada </p>
+            </div>
+        </div>
+    </section>
+    <!--Serviços Fim--->
+ 
+<!--Review inicio--->
+<section class="Avaliações" id="Avaliações">
+    <h1 class="heading">
+        <span>A</span>
+        <span>V</span>
+        <span>A</span>
+        <span>L</span>
+        <span>I</span>
+        <span>A</span>
+        <span>Ç</span>
+        <span>Õ</span>
+        <span>E</span>
+        <span>S</span>
+    </h1>
+
+
+
+<div class="avaliações-slider">
+     <div class="wrapper">
+         <div class="slider">
+            <div class="box">
+                <img src="Assets/Images/photo1.png" alt="">
+                <h3>Julia Santos</h3>
+                <p>Lore Ipsum dolor sit amet consectetur, adispicing elit, Inventore commodi eauram, regntium exitum
+                    malum ipsum nulo lectio ada ore.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+             </div>
+         </div>
+         <div class="slider">
+            <div class="box">
+                <img src="Assets/Images/photo2.jpg" alt="">
+                <h3>Bruna Camilo</h3>
+                <p>Lore Ipsum dolor sit amet consectetur, adispicing elit, Inventore commodi eauram, regntium exitum
+                    malum ipsum nulo lectio ada ore.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+             </div>
+         </div>
+     </div>
+     <div class="slider">
+        <div class="box">
+            <img src="Assets/Images/photo3.jpg" alt="">
+            <h3>Cláudia Soares</h3>
+            <p>Lore Ipsum dolor sit amet consectetur, adispicing elit, Inventore commodi eauram, regntium exitum
+                malum ipsum nulo lectio ada ore.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+         </div>
+     </div>
+ </div>
+ <div class="slider">
+    <div class="box">
+        <img src="Assets/Images/photo4.jpg" alt="">
+        <h3>Lucas Estevan</h3>
+        <p>Lore Ipsum dolor sit amet consectetur, adispicing elit, Inventore commodi eauram, regntium exitum
+            malum ipsum nulo lectio ada ore.</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+     </div>
+ </div>
+</div>
+</div>
+
+</section>
+<!--Review Fim--->
+     
+
+<!--Contato --->
+<footer>
+<section class="Contato" id="Contato">
+    <h1 class="Heading">
+       <span>S</span>
+       <span>I</span>
+       <span>G</span>
+       <span>A</span>
+       <span class="space">-</span>
+       <span>N</span>
+       <span>O</span>
+       <span>S</span>
+    </h1>
+    
+    <p>Fique por dentro de todas as nossas plataformas de contato e entretenimento. Nossos colaboradores estarão prontos para lhe ajudar tirando suas dúvidas.</p>
+
+       <div class="icons">
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-square-whatsapp"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="fa-brands fa-telegram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-solid fa-envelope"></i>
+        <i class="fa-brands fa-linkedin"></i>
+
+
+
+
+       </div>
+     </section>
+
+</footer>
+
+<!--Contato Fim--->
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="Assets/Script/script.js"></script>
+</body>
+
+</html>

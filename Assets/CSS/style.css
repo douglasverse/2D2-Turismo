@@ -1,0 +1,596 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap");
+
+* {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+:root {
+  --laranja: #ff8c00;
+  --branco: #fff;
+  --background: #333;
+}
+
+*::selection {
+  color: var(--branco);
+  background: var(--laranja);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 1.5rem 9%;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--background);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+}
+
+header .logo {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: var(--branco);
+  text-transform: uppercase;
+}
+header .logo span {
+  color: var(--laranja);
+}
+
+header .navbar a {
+  color: var(--branco);
+  font-size: 1.5rem;
+  margin: 0 0.8rem;
+  cursor: pointer;
+}
+
+header .navbar a:hover {
+  color: var(--laranja);
+}
+
+header .icons i {
+  color: var(--branco);
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+header .icons i:hover {
+  color: var(--laranja);
+}
+
+header .search-bar-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  padding: 1.5rem 2rem;
+  background: #333;
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  z-index: 1001;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+header .search-bar-container.active {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+header .search-bar-container #search-bar {
+  width: 100%;
+  padding: 1rem;
+  text-transform: none;
+  color: #333;
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+}
+header .search-bar-container label {
+  color: var(--branco);
+  cursor: pointer;
+  font-size: 2rem;
+  margin-left: 1.5rem;
+}
+
+header .search-bar-container label:hover {
+  color: var(--laranja);
+}
+
+.login-form-container {
+  position: fixed;
+  top: -120%;
+  z-index: 10000;
+  left: 0;
+  min-height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form-container.active {
+  top: 0;
+}
+.login-form-container form {
+  margin: 2rem;
+  padding: 1.5rem 2rem;
+  border: 0.5rem;
+  background-color: var(--branco);
+  width: 50rem;
+}
+
+.login-form-container form h3 {
+  color: #444;
+  font-size: 3rem;
+  text-transform: unset;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.login-form-container form .box {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.7rem;
+  color: #333;
+  margin: 1rem 0;
+  border: 5px solid rgba(0, 0, 0, 0.3);
+  text-transform: none;
+}
+
+.login-form-container form .box:focus {
+  border-color: var(--laranja);
+}
+
+.login-form-container form #remember {
+  margin: 2rem 0;
+}
+.login-form-container form label {
+  font-size: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: var(--laranja);
+  color: var(--branco);
+  padding: 1rem 1rem;
+  border: 0.2rem solid var(--laranja);
+  cursor: pointer;
+  font-size: 1.7rem;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: rgba(255, 165, 0, 0.2);
+  color: var(--laranja);
+}
+
+.login-form-container form .btn {
+  display: block;
+  width: 100%;
+}
+
+.login-form-container form p {
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.login-form-container form p a {
+  color: var(--laranja);
+}
+
+.login-form-container form p a:hover {
+  color: var(--background);
+  cursor: pointer;
+}
+.login-form-container #form-close {
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  font-size: 3rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+#menu-bar {
+  color: #fff;
+  border: 1rem solid #fff;
+  border: 0.5rem;
+  font-size: 2.5rem;
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+  display: none;
+}
+
+.Home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  position: relative;
+  z-index: 0;
+}
+
+.Home .content {
+  text-align: center;
+}
+
+.Home .content h3 {
+  font-size: 4rem;
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.8);
+}
+.Home .content p {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.8);
+  padding: 1.5rem 0;
+}
+
+.Home .content p span {
+  color: var(--laranja);
+}
+
+.Home .video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Home .controls {
+  padding: 1rem;
+  border-radius: 5rem;
+  background: rgba(0, 0, 0, 0.7);
+  position: relative;
+  top: 5rem;
+}
+
+.Home .controls .video-btn {
+  height: 1.5rem;
+  width: 1.5rem;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  margin: 0 0.5rem;
+}
+.Home .controls .video-btn.active {
+  background-color: var(--laranja);
+}
+
+.heading {
+  text-align: center;
+  padding: 2.5rem 0;
+}
+
+.heading span {
+  font-size: 3.5rem;
+  background-color: rgba(255, 165, 0, 0.2);
+  color: var(--laranja);
+  border-radius: 0.5rem;
+  padding: 0.2rem 1rem;
+  display: inline-block;
+  cursor: pointer;
+  /*display: inline-block;*/
+}
+
+.heading span .space {
+  background: none;
+}
+
+.Reservas .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+
+.Reservas .row .image{
+  flex: 1 1 40rem;
+};
+
+
+.Reservas .row .image img {
+width:100%;
+
+}
+
+
+.Reservas .row form{
+  flex: 1 1 45rem;
+  padding: 1rem;
+  box-shadow:  0 1rem 2rem rgba(0,0,0, .1);
+  border-radius: .5rem;
+}
+
+.Reservas .row form .inputBox{
+  padding:.1rem 0;
+
+}
+
+.Reservas .row form .inputBox input{
+width:100%;
+padding: 0.5rem;
+border:5px solid rgba(0,0,0, .1);
+font-size: 1.5rem;
+color:#333;
+text-transform: none;
+}
+
+.Reservas .row form .inputBox input{
+  width: 100%;
+  padding: 0.5rem;
+  border: 5px solid rgba(0,0,0, .1);
+  font-size: 1.7rem;
+  color:#333;
+  text-transform: none;
+}
+.Reservas .row form .inputBox h3{
+  font-size: 2rem;
+  padding: 1rem 0;
+  color:#666;
+}
+
+.Pacotes .box-container{
+  display: flex;
+  flex-wrap:wrap;
+  gap:2rem;
+}
+
+.Pacotes .box-container .box{
+  flex: 1 1 30rem;
+  border-radius:.5rem ;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.Pacotes .box-container .box img{
+height: 27rem;
+width: 100%;
+object-fit: cover;
+}
+.Pacotes .box-container .box .content h3{
+font-size: 2rem;
+color:#333;
+}
+.Pacotes .box-container .box .content h3 i{
+  color:var(--laranja);
+}
+.Pacotes .box-container .box .content{
+  padding:20px;
+}
+.Pacotes .box-container .box .content p{
+  font-size: 1.5rem;
+  color: #333;
+  padding-bottom: 10px;
+}
+
+.Pacotes .box-container .box .content .stars i{
+  font-size: 1.5rem;
+
+  
+  color: var(--laranja);
+}
+
+.Pacotes .box-container .box .content .price{
+font-size: 1.8rem;
+color: black;
+padding-top: 1rem;
+}
+
+.Pacotes .box-container .box .content .price span{
+  color:#666;
+  font-size: 1.5rem;
+  text-decoration: line-through;
+
+}
+
+.Serviços  .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+}
+
+.Serviços .box-container .box{
+  flex: 1 1 30rem;
+  border-radius: .5rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.Serviços .box-container .box i{
+padding:1rem;
+font-size:5rem;
+color:var(--laranja);
+}
+
+.Serviços .box-container .box h3{
+ 
+  font-size:1.5rem;
+  color:#333;
+  }
+  .Serviços .box-container .box p{
+    font-size: 1.5rem;
+    color:#333;
+    padding:1rem 0;
+
+  }
+
+  .Serviços .box-container .box:hover{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  
+  }
+  
+  .Avaliações .avaliações-slider{
+    padding-bottom: 2rem;
+  }
+  .Avaliações  .box {
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+  }
+
+  .Avaliações  .box img{
+    height:20rem;
+    width: 20rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+
+  .Avaliações .box h3{
+    color:#333;
+    font-size: 2.5rem;
+
+
+  }
+
+  .Avaliações .box p{
+
+    color:#666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+  }
+
+  .Avaliações .box .stars i{
+font-size: 1.7rem;
+color:var(--laranja);
+  }
+
+
+.Contato{
+  text-align: center;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+  width: 100%;
+}
+
+.Contato .Heading{
+  font-size: 3.5rem;
+  color:#fff;
+}
+
+footer{
+  width: 100%;
+  background-color: #333;
+}
+
+.Contato p{
+  font-size: 1.5rem;
+  padding: 2rem 0;
+  color: #fff;
+}
+
+.Contato .icons i{
+  font-size: 5rem;
+  color:var(--laranja);
+  margin: 10px;
+}
+
+.Contato .icons i:hover{
+  transform: rotate(10deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 995px) {
+  header {
+    padding: 2rem;
+  }
+  section {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-bar {
+    display: initial;
+  }
+
+  header .logo {
+    text-align: center;
+  }
+
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background: #333;
+    padding: 1rem 2rem;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  header .navbar a {
+    display: block;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    background: #222;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+
+  header .navbar a:hover {
+    background-color: #fff;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .heading span {
+    font-size: 2.5rem;
+  }
+}
